@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 import os
 #TODO lav min egen urlparser
-#TODO fjern lister fra dataframe
 #TODO undersøg hvilke hjemmesider som reqs ikke kan fange
 
 
