@@ -95,14 +95,4 @@ new_husrapport['færdiggørelsestiden'] = new_husrapport['færdiggørelsestiden'
 
 new_husrapport.to_csv(os.getcwd()+'\\new_husrapport.csv', index=False) # gemmer datasættet
 
-#Faggruppe1_rapport =  new_husrapport[new_husrapport['Faggruppe'] == 'Faggruppe1']
-
-#Faggruppe2_rapport =  new_husrapport[new_husrapport['Faggruppe'] == 'Faggruppe2']
-#plt.plot(Faggruppe1_rapport,'bs')
-#Faggruppe2_rapport = Faggruppe2_rapport.drop([Faggruppe2_rapport['færdiggørelsestiden'].idxmax()])
-#Faggruppe2_rapport = Faggruppe2_rapport.drop([Faggruppe2_rapport['færdiggørelsestiden'].idxmax()])
-#plt.plot(Faggruppe1_rapport,'bs')
-
-
-#plt.plot(Faggruppe2_rapport,'bs')
 

@@ -109,7 +109,22 @@ def scrape_multi(start_url, website_depth = 2,max_order = 2):
 					website_dataframe = website_dataframe._append(dataframe_temp)
 		external_urls_checked = external_urls_checked + external_urls
 
-
+	# Vi laver en liste af alle de hjemmesider scraperen har besøgt
+	website_series = website_dataframe['Connected websites'].explode().dropna()
+	website_series = website_series.unique()
+	website_list = website_series.tolist()
+	website_list = [x for x in website_list if x in website_dataframe['Website'].explode().dropna().tolist()]
+	website_dataframe.index = range(0,len(website_dataframe))
+	# Nu bytter vi lister ud med en søjle for hver hjemmeside
+	for domain in website_list:
+		temp_list = []
+		for i in range(0, len(website_dataframe['Connected websites'])):
+			if domain in website_dataframe['Connected websites'][i]:
+				temp_list = temp_list + [1]
+			else:
+				temp_list = temp_list + [0]
+		website_dataframe[domain] = temp_list
+	website_dataframe = website_dataframe.drop(columns=['Connected websites'])
 	website_dataframe.to_csv(os.getcwd() + '\\website_dataframe.csv', index=False)
 	#dataframe_expanded = dataframe["Connected websites"].apply(pd.Series)
 	#dataframe_expanded.to_csv(index=False)

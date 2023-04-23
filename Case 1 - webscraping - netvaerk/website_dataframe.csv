@@ -1,31 +1,31 @@
-Website,Order,Connected websites
-www.sik.dk,0,"['www.sik.dk', 'produkter.dk', 'www.facebook.com', 'twitter.com', 'www.linkedin.com', 'www.was.digst.dk', 'sparenergi.dk', 'virk.dk', 'indberet.virk.dk', 'hoeringsportalen.dk', 'post.borger.dk', 'www.e-boks.com', 'mit.dk', 'www.instagram.com', 'em-sik.sit-wb.dk', 'www.justitsministeriet.dk', 'em.dk', 'play.google.com', 'apps.apple.com', 'sikkerel.sik.dk', 'bpst.dk', 'ens.dk', 'politi.dk', 'www.soefartsstyrelsen.dk', 'www.fstyr.dk', 'www.retsinformation.dk', 'boligejer.dk', 'press.sostrenegrene.com', 'amid.dk', 'eur-lex.europa.eu', 'ec.europa.eu', 'ouh.dk', 'www.medarbejdersignatur.dk', 'www.nemid.nu', 'www.google.com', 'ontrack.sgs.com', 'aarsberetning.sik.dk', 'oes.dk']"
-produkter.dk,1,[]
-www.was.digst.dk,1,['www.sik.dk']
-sparenergi.dk,1,[]
-virk.dk,1,[]
-indberet.virk.dk,1,[]
-hoeringsportalen.dk,1,['was.digst.dk']
-post.borger.dk,1,[]
-www.e-boks.com,1,"['apps.apple.com', 'play.google.com', 'global.e-boks.com', 'corporate.e-boks.com', 'www.linkedin.com', 'brugersupport.e-boks.dk', 'www.e-boks.dk', 'www.e-boks.com', 'market.android.com']"
-mit.dk,1,[]
-em-sik.sit-wb.dk,1,['www.torproject.org']
-www.justitsministeriet.dk,1,[]
-em.dk,1,"['em-dep.sit-wb.dk', 'whistleblower.dk', 'erst.sit-wb.dk', 'em-kfst.sit-wb.dk', 'fin.sit-wb.dk', 'dkpto.sit-wb.dk', 'em-sik.sit-wb.dk', 'em-sfs.sit-wb.dk', 'em-nh.sit-wb.dk', 'www.regeringen.dk', 'sparenergi.dk', 'erhvervsstyrelsen.dk', 'www.finanstilsynet.dk', 'www.kfst.dk', 'www.dkpto.dk', 'www.sik.dk', 'www.soefartsstyrelsen.dk', 'naevneneshus.dk']"
-sikkerel.sik.dk,1,[]
-bpst.dk,1,['www.was.digst.dk']
-ens.dk,1,"['kefm.dk', 'www.was.digst.dk', 'en.kefm.dk', 'ens.dk', 'sparenergi.dk', 'tjekditnet.dk', 'www.retsinformation.dk', 'portal.ens.dk', 'evida.dk', 'tilskud.ens.dk', 'www.ok.dk', 'naervarme.dk', 'www.bestgreen.dk', 'ewii.com', 'sustain.dk', 'nemenergi.nu', 'www.varmeo.dk', 'www.ft.dk', 'www.folketingstidende.dk', 'energidata.maps.arcgis.com', 'hoeringsportalen.dk', 'op.europa.eu', 'arctic-council.org', 'mst.dk', 'promice.org', 'villumresearchstation.dk', 'www.ethics.dk', 'eur-lex.europa.eu', 'energinet.dk']"
-www.soefartsstyrelsen.dk,1,"['services.dma.dk', 'www.dma.dk', 'verify.dma.dk', 'shipregistration.dma.dk', 'www.linkedin.com', 'www.was.digst.dk', 'vimeo.com', 'www.soefartsstyrelsen.dk', 'twitter.com', 'candidate.hr-manager.net', 'www.retsinformation.dk', 'indberet.virk.dk', 'www.barentswatch.no', 'www.lovtidende.dk', 'www.dnv.com', '%20https', 'www.imo.org', 'wwwcdn.imo.org', 'docs.imo.org', 'eng.navigation.gl', 'navigation.gl', 'www.tusass.gl', 'www.dmi.dk', 'www.salamis.bilfinger.com', 'forcecertification.com', 'www.inspecta.dk', 'www.teknologisk.dk', 'www.shipcon.dk', 'vestvaerftet.dk', 'shipmanagement.dk', 'www.hauschildtmarine.dk', 'www.marlothmaritime.com', 'www.oilpower.dk', 'cralog.com', 'www.certex.dk', 'www.ems.as', 'fyns-kran.dk', 'grumsen.dk', 'www.hytek.dk', 'shgroup.dk', 'www.avior.no', 'www.brdrpetersen.dk', 'carlstahl.dk', 'enabl-wind.com', 'enermech.com', 'glenn.ervik@futureservices.no', 'skibssmedie.dk', 'hydra-teknik.dk', 'jjhydraulik.dk', 'www.jobigroup.com', 'kjelektro.dk', 'www.konecranes.dk', 'www.hydyg.dk', 'www.macgregor.com', 'www.fodgaard.dk', 'www.mosetechnology.com', 'www.nhy.dk', 'nos-as.dk', 'oae.dk', 'www.palfingermarine.com', 'scannautic.dk', 'www.studsgaard.dk', 'www.shipyard.dk', 'www.tmphydraulik.dk', 'westdiesel.dk', 'west-marine.dk', 'www.asyard.dk', 'www.sylvest-trading.dk', 'www.polaris-as.dk', 'www.huginmarine.com', 'intertek.dk', 'www.corelab.com', 'www.knudehansen.com', 'shipconsult.dk', 'nordfyn-marine.dk', 'hansbuch.dk', 'he-as.dk', 'www.hm-elektro.dk', 'www.kemp-lauritzen.dk', 'os.gl', 'prokyon.dk', 'www.ranab.se', 'www.scanel.dk', 'seamaster.dk', 'www.wartsila.com', 'www.vest-el.dk', 'www.helippe.com', 'nuukvikingservice.gl', 'unisafe.dk', 'www.viking-life.com', 'www.f-a.dk', 'forcetechnology.com', 'www.vysusgroup.com', 'www.davit-company.de', 'esvagt.com', 'www.gesinu.lt', 'www.lsa-service.com', 'www.palfinger.dk', 'scanunit.se', 'virk.dk', 'blanket.virk.dk', 'www.ccs.org.cn', 'naevneneshus.dk', 'ufm.dk', 'ec.europa.eu', 'eur-lex.europa.eu', 'mrv.emsa.europa.eu', 'secure.capevo.net', 'www.sik.dk', 'www.imci.org', 'seafarer.dma.dk', 'www.boardupnorth.com', 'www.danishyachtunion.dk', 'dk-dfu.dk', 'dansksejlunion.dk', 'domstol.dk', 'gst.dk', 'mst.dk', 'soesport.dk', 'politi.dk', 'www.danskehavnelods.dk', 'havplan.dk', 'um.dk', 'em.dk', 'em-sfs.sit-wb.dk', 'www.justitsministeriet.dk', 'www.borger.dk', 'www.datatilsynet.dk', 'erhvervsstyrelsen.dk', 'hoeringsportalen.dk', 'sfs360.pj.360online.com', 'eu.eu-supply.com']"
-www.fstyr.dk,1,[]
-www.retsinformation.dk,1,[]
-boligejer.dk,1,"['www.was.digst.dk', 'www.adgangforalle.dk']"
-press.sostrenegrene.com,1,[]
-amid.dk,1,[]
-eur-lex.europa.eu,1,[]
-ec.europa.eu,1,['plus.google.com']
-ouh.dk,1,"['da-dk.facebook.com', 'dk.linkedin.com', 'www.instagram.com', 'en.ouh.dk', 'www.was.digst.dk', 'regionsyddanmark.dk', 'www.sundhed.dk']"
-www.medarbejdersignatur.dk,1,[]
-www.nemid.nu,1,[]
-ontrack.sgs.com,1,"['msfs-gis-ontrack.microsoftcrmportals.com', 'www.linkedin.com', 'twitter.com', 'www.facebook.com', 'www.instagram.com', 'www.sgs.com']"
-aarsberetning.sik.dk,1,"['www.sik.dk', 'produkter.dk', 'www.was.digst.dk']"
-oes.dk,1,[]
+Website,Order,www.sik.dk,produkter.dk,www.was.digst.dk,sparenergi.dk,virk.dk,indberet.virk.dk,hoeringsportalen.dk,post.borger.dk,www.e-boks.com,mit.dk,em-sik.sit-wb.dk,www.justitsministeriet.dk,em.dk,sikkerel.sik.dk,bpst.dk,ens.dk,www.soefartsstyrelsen.dk,www.fstyr.dk,www.retsinformation.dk,boligejer.dk,press.sostrenegrene.com,amid.dk,eur-lex.europa.eu,ec.europa.eu,ouh.dk,www.medarbejdersignatur.dk,www.nemid.nu,ontrack.sgs.com,aarsberetning.sik.dk,oes.dk
+www.sik.dk,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+produkter.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+www.was.digst.dk,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+sparenergi.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+virk.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+indberet.virk.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hoeringsportalen.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+post.borger.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+www.e-boks.com,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mit.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+em-sik.sit-wb.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+www.justitsministeriet.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+em.dk,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+sikkerel.sik.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+bpst.dk,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ens.dk,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+www.soefartsstyrelsen.dk,1,1,0,1,0,1,1,1,0,0,0,0,1,1,0,0,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0
+www.fstyr.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+www.retsinformation.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+boligejer.dk,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+press.sostrenegrene.com,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+amid.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+eur-lex.europa.eu,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ec.europa.eu,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ouh.dk,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+www.medarbejdersignatur.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+www.nemid.nu,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ontrack.sgs.com,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+aarsberetning.sik.dk,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+oes.dk,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
