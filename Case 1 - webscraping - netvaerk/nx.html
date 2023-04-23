@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 2000px;
+                 height: 900px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "www.sik.dk", "label": "www.sik.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "produkter.dk", "label": "produkter.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "www.was.digst.dk", "label": "www.was.digst.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "sparenergi.dk", "label": "sparenergi.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "virk.dk", "label": "virk.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "indberet.virk.dk", "label": "indberet.virk.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "hoeringsportalen.dk", "label": "hoeringsportalen.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "post.borger.dk", "label": "post.borger.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "www.e-boks.com", "label": "www.e-boks.com", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "mit.dk", "label": "mit.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "em-sik.sit-wb.dk", "label": "em-sik.sit-wb.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "www.justitsministeriet.dk", "label": "www.justitsministeriet.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "em.dk", "label": "em.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "sikkerel.sik.dk", "label": "sikkerel.sik.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "bpst.dk", "label": "bpst.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ens.dk", "label": "ens.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "www.soefartsstyrelsen.dk", "label": "www.soefartsstyrelsen.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "www.fstyr.dk", "label": "www.fstyr.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "www.retsinformation.dk", "label": "www.retsinformation.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "boligejer.dk", "label": "boligejer.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "press.sostrenegrene.com", "label": "press.sostrenegrene.com", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "amid.dk", "label": "amid.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "eur-lex.europa.eu", "label": "eur-lex.europa.eu", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ec.europa.eu", "label": "ec.europa.eu", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ouh.dk", "label": "ouh.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "www.medarbejdersignatur.dk", "label": "www.medarbejdersignatur.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "www.nemid.nu", "label": "www.nemid.nu", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "ontrack.sgs.com", "label": "ontrack.sgs.com", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "aarsberetning.sik.dk", "label": "aarsberetning.sik.dk", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "oes.dk", "label": "oes.dk", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "www.sik.dk", "to": "www.sik.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "produkter.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "www.was.digst.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "sparenergi.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "virk.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "indberet.virk.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "hoeringsportalen.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "post.borger.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "www.e-boks.com", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "mit.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "em-sik.sit-wb.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "www.justitsministeriet.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "em.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "sikkerel.sik.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "bpst.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "ens.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "www.soefartsstyrelsen.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "www.fstyr.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "www.retsinformation.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "boligejer.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "press.sostrenegrene.com", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "amid.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "eur-lex.europa.eu", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "ec.europa.eu", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "ouh.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "www.medarbejdersignatur.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "www.nemid.nu", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "ontrack.sgs.com", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "aarsberetning.sik.dk", "width": 1}, {"arrows": "to", "from": "www.sik.dk", "to": "oes.dk", "width": 1}, {"arrows": "to", "from": "www.was.digst.dk", "to": "www.sik.dk", "width": 1}, {"arrows": "to", "from": "www.e-boks.com", "to": "www.e-boks.com", "width": 1}, {"arrows": "to", "from": "em.dk", "to": "www.sik.dk", "width": 1}, {"arrows": "to", "from": "em.dk", "to": "sparenergi.dk", "width": 1}, {"arrows": "to", "from": "em.dk", "to": "em-sik.sit-wb.dk", "width": 1}, {"arrows": "to", "from": "em.dk", "to": "www.soefartsstyrelsen.dk", "width": 1}, {"arrows": "to", "from": "bpst.dk", "to": "www.was.digst.dk", "width": 1}, {"arrows": "to", "from": "ens.dk", "to": "ens.dk", "width": 1}, {"arrows": "to", "from": "ens.dk", "to": "www.was.digst.dk", "width": 1}, {"arrows": "to", "from": "ens.dk", "to": "sparenergi.dk", "width": 1}, {"arrows": "to", "from": "ens.dk", "to": "hoeringsportalen.dk", "width": 1}, {"arrows": "to", "from": "ens.dk", "to": "www.retsinformation.dk", "width": 1}, {"arrows": "to", "from": "ens.dk", "to": "eur-lex.europa.eu", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "www.soefartsstyrelsen.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "www.sik.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "www.was.digst.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "virk.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "indberet.virk.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "hoeringsportalen.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "www.justitsministeriet.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "em.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "www.retsinformation.dk", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "eur-lex.europa.eu", "width": 1}, {"arrows": "to", "from": "www.soefartsstyrelsen.dk", "to": "ec.europa.eu", "width": 1}, {"arrows": "to", "from": "boligejer.dk", "to": "www.was.digst.dk", "width": 1}, {"arrows": "to", "from": "ouh.dk", "to": "www.was.digst.dk", "width": 1}, {"arrows": "to", "from": "aarsberetning.sik.dk", "to": "www.sik.dk", "width": 1}, {"arrows": "to", "from": "aarsberetning.sik.dk", "to": "produkter.dk", "width": 1}, {"arrows": "to", "from": "aarsberetning.sik.dk", "to": "www.was.digst.dk", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
