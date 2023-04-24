@@ -8,7 +8,7 @@ print(website_dataframe.head())
 
 
 #For at lave en visualisering af netværket, fjerne vi de første tre søjler og giver rækkerne de samme navne som søjlerne
-website_dataframe_temp = website_dataframe.drop(columns=['Website', 'Order'])
+website_dataframe_temp = website_dataframe.drop(columns=['Website','url', 'Order'])
 website_dataframe_temp.index = website_dataframe_temp.columns
 
 # Vi kan så lave dataframet om til en adjaceny matrix med networkx pakken og visualisere det med pyvis.network

@@ -2,13 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 
 
-url = 'https://www.sik.dk'
+url = 'https://candidate.hr-manager.net/vacancies/list.aspx?customer=statens_erekruttering&DepartmentId=6211'
 reqs = requests.get(url)
 soup = BeautifulSoup(reqs.text, 'html.parser')
 
 urls = []
 for link in soup.find_all('a'):
-	print(link.get('href'))
+	urls = urls + [link.get('href')]
 
 #
 # from urllib.parse import urlparse
